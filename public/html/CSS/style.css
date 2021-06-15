@@ -1,0 +1,157 @@
+@import url(reset.css);
+
+
+/*** GENERAL ***/
+
+body{
+	  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  background: #585c68;
+}
+
+main, .header-body{
+	width: 960px;
+	margin: 0 auto;
+}
+
+h1, h2, a{
+	color: #0bb5f4;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+h1{
+	font-size: 25px;
+	margin-left: 20px;
+	text-transform: uppercase;
+}
+
+h2{
+	font-size: 20px;
+	border-bottom: 2px solid #b1eaff;;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+p{
+	text-align: justify;
+
+}
+
+
+
+
+a:hover, #contact a:hover{
+	color: #333300;
+}
+
+
+#about, #skills, #education, #experience, #language, #publications{
+	float: right;
+	margin-left: 300px;
+}
+
+
+
+/*** HEADER ***/
+
+header{
+	height: 70px;
+	overflow: hidden;
+}
+
+#header-top-line{
+	background:#000;
+	height: 20px;
+}
+
+.header-body{
+	height: 45px;
+}
+
+nav{
+	float: right;
+}
+
+
+header ul li{
+	float: left;
+	padding-right: 15px;
+	margin: 15px 5px;
+	font-size: 16px;
+	text-transform: uppercase;
+	display: inline-block;
+	list-style-position: inside;
+	border-right: 2px solid green;
+
+}
+
+
+header ul li:last-child{
+	border:none;
+}
+
+
+
+/*** MAIN ***/
+
+main{
+
+	background: #c3cece;
+	padding: 20px;
+	overflow: hidden;
+}
+
+
+/*Contact*/
+
+#contact{
+	float: left;
+	/*border: 1px solid red;*/
+	width: 300px;
+	height: 400px;
+	position: fixed;
+
+}
+
+.fa{
+	margin-right: 10px;
+}
+
+address, #contact h2{
+	width: 200px;
+	margin: 0 auto;
+	line-height: 2;
+}
+
+#contact a {
+	color:#000;
+	font-weight: normal; 
+}
+
+img{
+	float: left;
+	margin: 7px 10px;
+	padding-left: 25px;
+	border-radius: 20%;
+	width: 250px;
+	height: 250px;
+}
+
+/* About */
+
+
+
+#about{
+	margin-bottom: 20px;
+}
+
+
+
+/*Education*/
+
+#education{
+	
+
+}
+
+
