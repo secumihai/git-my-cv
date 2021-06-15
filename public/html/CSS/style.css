@@ -38,8 +38,6 @@ p{
 }
 
 
-
-
 a:hover, #contact a:hover{
 	color: #333300;
 }
@@ -147,11 +145,39 @@ img{
 
 
 
-/*Education*/
+/*Education and Experience Tables*/
 
-#education{
-	
 
+.tables {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.tables  thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.tables  th,
+.tables   td {
+    padding: 12px 15px;
+}
+
+.tables   tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.tables  tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.tables   tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
 }
 
 
