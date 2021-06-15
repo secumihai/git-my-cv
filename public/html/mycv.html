@@ -25,7 +25,6 @@
 					<li><a href="#experience">Work Experience</a></li>
 					<li><a href="#language">Language Proficiency</a></li>
 					<li><a href="#publications">Publications</a></li>
-					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -123,19 +122,21 @@
 		</section>
 
 		<!-- Skills Section -->
-		<section id="skills">
-			<h2>Skills</h2>
-			<ul>
-				<li>Programming skills (OOP);</li>
-				<li>Data structures & Algorithms;</li>
-				<li>Java SE;</li>
-				<li>DB knowledge (SQL, Oracle);</li>
-				<li>ORM (JPA,Hibernate) – beginner;</li>
-				<li>HTML, CSS;</li>
-				<li>Git.</li>
-			</ul>
-		
-		</section>
+		<div class="skills-langauge">
+			<section id="skills">
+				<h2>Skills</h2>
+				<ul>
+					<li>Programming skills (OOP);</li>
+					<li>Data structures & Algorithms;</li>
+					<li>Java SE;</li>
+					<li>DB knowledge (SQL, Oracle);</li>
+					<li>ORM (JPA,Hibernate) – beginner;</li>
+					<li>HTML, CSS;</li>
+					<li>Git.</li>
+				</ul>
+			
+			</section>
+		</div>
 
 		<!-- Experience Section -->
 		<section id="experience">
@@ -154,7 +155,7 @@
 						<td>2016-present</td>
 						<td>Customs Laboratory</td>
 						<td>
-							<section>
+							<section class="details">
 								<details>
   								<summary>Chief Inspector</summary>
   								<p><strong>Main Activities</strong></p>
@@ -181,7 +182,7 @@
 						<td>2009–2016</td>
 						<td>Laboratory of Organic and Analytical Chemistry, Moldova State University</td>
 						<td>
-							<section>
+							<section class="details">
 								<details>
   								<summary>Scientific Researcher</summary>
 								<p><strong>Main Activities</strong></p>
@@ -209,7 +210,7 @@
 							Laboratory of Bioinorganic Chemistry, Institute of Chemistry of the Academy of Sciences of Moldova
 						</td>
 						<td>
-							<section>
+							<section class="details">
 								<details>
   								<summary>Junior Researcher</summary>
 								<p><strong>Main Activities</strong></p>
@@ -237,19 +238,22 @@
 		</section>
 
 		<!-- Language Proficiency -->
-		<section id="language">
-			<h2>Language Proficiency</h2>
-			<ul>
-				<li>Romanian <progress value="100" max="100"></progress></li>
-				<li>Russian <progress value="50" max="100"></progress></li>
-				<li>English <progress value="60" max="100"></progress></li>
-				<li>French <progress value="20" max="100"></progress></li>
-			</ul>
-		</section>
+		<div class="skills-langauge">
+			<section id="language">
+				<h2>Language Proficiency</h2>
+				<ul>
+					<li>Romanian <progress value="100" max="100"></progress></li>
+					<li>Russian <progress value="50" max="100"></progress></li>
+					<li>English <progress value="60" max="100"></progress></li>
+					<li>French <progress value="20" max="100"></progress></li>
+				</ul>
+			</section>
+		</div>
 
 		<!-- Publication Section -->
 		<section id="publications">
 			<h2>Publications</h2>
+			<div class="publication-list">
 			<ul>
 				<li>
 					<p>
@@ -270,15 +274,13 @@
 					</a>
 				</li>
 			</ul>
+			</div>
 		</section>
-
-	
-		
 
 	</main>
 	
 	<!-- Footer -->
-	<footer align="center">
+	<footer>
 		<div> 
 			Copyright &copy; 2021 Secu Mihail. All Rights Reserved.
 		</div>
