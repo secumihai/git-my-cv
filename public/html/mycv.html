@@ -3,41 +3,68 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	 <!-- CSS path -->
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+	<!-- Font-Awesome path -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>My CV</title>
 </head>
 <body>
 
 	<!-- Header -->
 	<header>
-		<h1>Secu Mihail</h1>
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#education">Education</a></li>
-				<li><a href="#experience">Work Experience</a></li>
-				<li><a href="#language">Language Proficiency</a></li>
-				<li><a href="#publications">Publications</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
+		<div id="header-top-line"></div>
+		<div class="header-body">
+			<nav>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#experience">Work Experience</a></li>
+					<li><a href="#language">Language Proficiency</a></li>
+					<li><a href="#publications">Publications</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
 	<!-- Main -->
 	<main>
+			<!-- Contact Section -->
+		<section id="contact">
+			 <h1>curriculum vitae</h1>
+			 <a href="images/avatar.jpg">
+				<img src="images/avatar.jpg" alt="Mihail" width="200" height="200">
+			</a>
+			<h2>secu mihail</h2>
+			<address>
+				<ul>
+					<li><i class="fa fa-calendar" aria-hidden="true"></i>January 10, 1985</li>
+					<li><i class="fa fa-map-marker" aria-hidden="true"></i>Chisinau, Moldova</li>
+					<li>
+						<a href="tel:+373-69-18-33-55"><i class="fa fa-mobile" aria-hidden="true"></i>+373-69-18-33-55</a>
+					</li>
+					<li><a href="mailto:secumihai@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>Email Us</a></li>
+					
+				</ul>
+			</address>
+		</section>
 
 		<!-- About Section -->
 		<section id="about">
-			<h2>About</h2>
-			<img src="images/avatar.jpg" alt="Mihail">
-			<p>
-				I am a generalist, a believer in experience and applying knowledge from other technical areas to solve problems. I am chemist who is interested in programming software. I have taken part in a lot of chemical projects with a broad industrial experience. After 14 years working experience in chemistry field I faced to IT. I have graduated Software Engineering. I have succesfully done a software programmer training. 
-			</p>
+				<h2>About</h2>
+				<p>
+					I am a generalist, a believer in experience and applying knowledge from other technical areas to solve problems. I am chemist who is interested in programming software. I have taken part in a lot of chemical projects with a broad industrial experience. After 14 years working experience in chemistry field I faced to IT. I have graduated Software Engineering. I have succesfully done a software programmer training. 
+				</p>
 		</section>
+
 
 		<!-- Education Section -->
 		<section id="education">
 			<h2>Education</h2>
-			<table>
+			<table class="tables">
 				<thead>
 					<tr>
 						<th>Period</th>
@@ -95,24 +122,26 @@
 		</section>
 
 		<!-- Skills Section -->
-		<section id="skills">
-			<h2>Skills</h2>
-			<ul>
-				<li>Programming skills (OOP);</li>
-				<li>Data structures & Algorithms;</li>
-				<li>Java SE;</li>
-				<li>DB knowledge (SQL, Oracle);</li>
-				<li>ORM (JPA,Hibernate) – beginner;</li>
-				<li>HTML, CSS;</li>
-				<li>Git.</li>
-			</ul>
-		
-		</section>
+		<div class="skills-langauge">
+			<section id="skills">
+				<h2>Skills</h2>
+				<ul>
+					<li>Programming skills (OOP);</li>
+					<li>Data structures & Algorithms;</li>
+					<li>Java SE;</li>
+					<li>DB knowledge (SQL, Oracle);</li>
+					<li>ORM (JPA,Hibernate) – beginner;</li>
+					<li>HTML, CSS;</li>
+					<li>Git.</li>
+				</ul>
+			
+			</section>
+		</div>
 
 		<!-- Experience Section -->
 		<section id="experience">
 			<h2>Work Experience</h2>
-			<table>
+			<table class="tables">
 				<thead>
 					<tr>
 						<th>Period</th>
@@ -126,7 +155,7 @@
 						<td>2016-present</td>
 						<td>Customs Laboratory</td>
 						<td>
-							<section>
+							<section class="details">
 								<details>
   								<summary>Chief Inspector</summary>
   								<p><strong>Main Activities</strong></p>
@@ -153,7 +182,7 @@
 						<td>2009–2016</td>
 						<td>Laboratory of Organic and Analytical Chemistry, Moldova State University</td>
 						<td>
-							<section>
+							<section class="details">
 								<details>
   								<summary>Scientific Researcher</summary>
 								<p><strong>Main Activities</strong></p>
@@ -181,7 +210,7 @@
 							Laboratory of Bioinorganic Chemistry, Institute of Chemistry of the Academy of Sciences of Moldova
 						</td>
 						<td>
-							<section>
+							<section class="details">
 								<details>
   								<summary>Junior Researcher</summary>
 								<p><strong>Main Activities</strong></p>
@@ -209,20 +238,22 @@
 		</section>
 
 		<!-- Language Proficiency -->
-		<section id="skills">
-			<h2>Language Proficiency</h2>
-			<ul>
-				<li>Romanian <progress value="100" max="100"></progress></li>
-				<li>Russian <progress value="50" max="100"></progress></li>
-				<li>English <progress value="60" max="100"></progress></li>
-				<li>French <progress value="20" max="100"></progress></li>
-			</ul>
-		
-		</section>
+		<div class="skills-langauge">
+			<section id="language">
+				<h2>Language Proficiency</h2>
+				<ul>
+					<li>Romanian <progress value="100" max="100"></progress></li>
+					<li>Russian <progress value="50" max="100"></progress></li>
+					<li>English <progress value="60" max="100"></progress></li>
+					<li>French <progress value="20" max="100"></progress></li>
+				</ul>
+			</section>
+		</div>
 
 		<!-- Publication Section -->
 		<section id="publications">
 			<h2>Publications</h2>
+			<div class="publication-list">
 			<ul>
 				<li>
 					<p>
@@ -243,28 +274,13 @@
 					</a>
 				</li>
 			</ul>
+			</div>
 		</section>
-
-		<!-- Contact Section -->
-		<section id="contact">
-			<h2>Contact</h2>
-			<address>
-				<ul>
-					<li>&#127968;: Chisinau, Republic of Moldova, Mihai Eminescu 34 street</li>
-					<li>&#9742;: <a href="tel:+373-69-18-33-55">+373-69-18-33-55</a></li>
-					<li>&#9993: <a href="mailto:secumihai@gmail.com">Email Us</a></li>
-					
-				</ul>
-			</address>
-			
-		</section>
-		
-		
 
 	</main>
 	
 	<!-- Footer -->
-	<footer align="center">
+	<footer>
 		<div> 
 			Copyright &copy; 2021 Secu Mihail. All Rights Reserved.
 		</div>
