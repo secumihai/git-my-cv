@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,280 +6,318 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	 <!-- CSS path -->
-	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="CSS/style.css"> -->
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="CSS/bootstrap-5.0.1-dist/css/bootstrap.min.css">
 
 	<!-- Font-Awesome path -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>My CV</title>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
 
 	<!-- Header -->
+
 	<header>
-		<div id="header-top-line"></div>
-		<div class="header-body">
-			<nav>
-				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#education">Education</a></li>
-					<li><a href="#experience">Work Experience</a></li>
-					<li><a href="#language">Language Proficiency</a></li>
-					<li><a href="#publications">Publications</a></li>
-				</ul>
-			</nav>
-		</div>
+		<nav id="navbar-example2" class="navbar navbar-expand-xl navbar-light bg-dark bg-gradient px-3 fixed-top">
+		  <a class="navbar-brand" href="#contact">
+		  	<h1 class="h6 text-uppercase text-white">
+		  		curriculum vitae
+		  	</h1>
+		  </a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+  			<div class="collapse navbar-collapse" id="navbarNav">
+			  <ul class="nav nav-pills navbar-nav px-5 mx-5">
+			    <li class="nav-item">
+			      <a class="nav-link active text-white " href="#about">About</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link text-white " href="#education">Education</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link text-white" href="#skills">Skills</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link text-white" href="#experience">Work Experience</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link text-white" href="#language">Language Proficiency</a>
+			    </li>
+			     <li class="nav-item">
+			      <a class="nav-link text-white" href="#publications">Publications</a>
+			    </li>
+		  	</ul>
+		  </div>
+		</nav>
 	</header>
 
+	<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="10" class="scrollspy-example" tabindex="0">
+
 	<!-- Main -->
-	<main>
-			<!-- Contact Section -->
-		<section id="contact">
-			 <h1>curriculum vitae</h1>
-			 <a href="images/avatar.jpg">
-				<img src="images/avatar.jpg" alt="Mihail" width="200" height="200">
-			</a>
-			<h2>secu mihail</h2>
-			<address>
-				<ul>
-					<li><i class="fa fa-calendar" aria-hidden="true"></i>January 10, 1985</li>
-					<li><i class="fa fa-map-marker" aria-hidden="true"></i>Chisinau, Moldova</li>
-					<li>
-						<a href="tel:+373-69-18-33-55"><i class="fa fa-mobile" aria-hidden="true"></i>+373-69-18-33-55</a>
-					</li>
-					<li><a href="mailto:secumihai@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>Email Us</a></li>
-					
-				</ul>
-			</address>
-		</section>
+		<main class="container mt-5 p-5 border border-primary">
+			<div class="row">
 
-		<!-- About Section -->
-		<section id="about">
-				<h2>About</h2>
-				<p>
-					I am a generalist, a believer in experience and applying knowledge from other technical areas to solve problems. I am chemist who is interested in programming software. I have taken part in a lot of chemical projects with a broad industrial experience. After 14 years working experience in chemistry field I faced to IT. I have graduated Software Engineering. I have succesfully done a software programmer training. 
-				</p>
-		</section>
+			    <!-- Contact Section -->
+				<div class="col-lg-4">
+					<div class="card">
+						<section id="contact">
+							 <a href="images/avatar.jpg">
+								<img class="card-img-top img-fluid" src="images/avatar.jpg" alt="Mihail" >
+							</a>
+							<div class="card-body">
+								<h2 class="card-title text-capitalize">secu mihail</h2>
+								<address class="card-text">
+									<ul class="list-unstyled">
+										<li><i class="fa fa-calendar mx-2" aria-hidden="true"></i>January 10, 1985</li>
+										<li><i class="fa fa-map-marker mx-2" aria-hidden="true"></i>Chisinau, Moldova</li>
+										<li>
+											<a href="tel:+373-69-18-33-55" class="text-decoration-none text-dark"><i class="fa fa-mobile mx-2" aria-hidden="true"></i>+373-69-18-33-55</a>
+										</li>
+										<li><a href="mailto:secumihai@gmail.com" class="text-decoration-none text-dark"><i class="fa fa-envelope mx-2" aria-hidden="true"></i>Email Us</a></li>
+										
+									</ul>
+								</address>
+							</div>
+						</section>
+					</div>
+
+				</div>
+
+				<!-- About Section -->
+				<div class="col-lg-8">
+					<section id="about">
+							<h2>About</h2>
+							<div>
+								
+									I am a generalist, a believer in experience and applying knowledge from other technical areas to solve problems. I am chemist who is interested in programming software. I have taken part in a lot of chemical projects with a broad industrial experience. After 14 years working experience in chemistry field I faced to IT. I have graduated Software Engineering. I have succesfully done a software programmer training. 
+								
+							</div>
+
+					</section>
 
 
-		<!-- Education Section -->
-		<section id="education">
-			<h2>Education</h2>
-			<table class="tables">
-				<thead>
-					<tr>
-						<th>Period</th>
-						<th>Institution and Country</th>
-						<th>Studies<th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><p>2018-2020</p></td>
-						<td><p>Institute of Continuing Education, Chisinau (Moldova)</p></td>
-						<td><p>Software Engineering</p></td>
-					</tr>
-					<tr>
-						<td><p>2017</p></td>
-						<td><p>Labour Institute, Chisinau (Moldova)</p></td>
-						<td>
-							<p>Training course: Safety and Health at the Workplace, second level</p>						
-						</td>
-					</tr>
-					<tr>
-						<td><p>2011-2014</p></td>
-						<td><p>University of Bordeaux 1, Bordeaux (France)</p></td>
-						<td>
-							<p>
-								Mobility grant Erasmus Mundus External Cooperation Window Lot 6 (EMECW-Lot6), University of Bordeaux 1, Bordeaux (France)
-							</p>
-							
-						</td>
-					</tr>
-					<tr>
-						<td><p>2009-2014</p></td>
-						<td><p>Faculty of Chemistry and Chemical Technology, Moldova State University</p></td>
-						<td>
-							<p>PhD student in Coordinative Chemistry</p>
-							
-						</td>
-					</tr>
-					<tr>
-						<td><p>2007-2008</p></td>
-						<td><p>Faculty of Chemistry and Chemical Technology, Moldova State University</p></td>
-						<td>
-							<p>Master Degree in Chemistry</p>
-						</td>
-					</tr>
-					<tr>
-						<td><p>2003-2007</p></td>
-						<td><p>Faculty of Chemistry and Chemical Technology, Moldova State University</p></td>
-						<td>
-							<p>Licentiate in Chemistry, Specialization Analytical Chemistry</p>
-						</td>
-					</tr>
-				</tbody>
-			</table>	
-		</section>
+					<!-- Education Section -->
+					<section id="education">
+						<h2>Education</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Period</th>
+									<th>Institution and Country</th>
+									<th>Studies</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><p>2018-2020</p></td>
+									<td><p>Institute of Continuing Education, Chisinau (Moldova)</p></td>
+									<td><p>Software Engineering</p></td>
+								</tr>
+								<tr>
+									<td><p>2017</p></td>
+									<td><p>Labour Institute, Chisinau (Moldova)</p></td>
+									<td>
+										<p>Training course: Safety and Health at the Workplace, second level</p>						
+									</td>
+								</tr>
+								<tr>
+									<td><p>2011-2014</p></td>
+									<td><p>University of Bordeaux 1, Bordeaux (France)</p></td>
+									<td>
+										<p>
+											Mobility grant Erasmus Mundus External Cooperation Window Lot 6 (EMECW-Lot6), University of Bordeaux 1, Bordeaux (France)
+										</p>
+										
+									</td>
+								</tr>
+								<tr>
+									<td><p>2009-2014</p></td>
+									<td><p>Faculty of Chemistry and Chemical Technology, Moldova State University</p></td>
+									<td>
+										<p>PhD student in Coordinative Chemistry</p>
+										
+									</td>
+								</tr>
+								<tr>
+									<td><p>2007-2008</p></td>
+									<td><p>Faculty of Chemistry and Chemical Technology, Moldova State University</p></td>
+									<td>
+										<p>Master Degree in Chemistry</p>
+									</td>
+								</tr>
+								<tr>
+									<td><p>2003-2007</p></td>
+									<td><p>Faculty of Chemistry and Chemical Technology, Moldova State University</p></td>
+									<td>
+										<p>Licentiate in Chemistry, Specialization Analytical Chemistry</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>	
+					</section>
 
-		<!-- Skills Section -->
-		<div class="skills-langauge">
-			<section id="skills">
-				<h2>Skills</h2>
-				<ul>
-					<li>Programming skills (OOP);</li>
-					<li>Data structures & Algorithms;</li>
-					<li>Java SE;</li>
-					<li>DB knowledge (SQL, Oracle);</li>
-					<li>ORM (JPA,Hibernate) – beginner;</li>
-					<li>HTML, CSS;</li>
-					<li>Git.</li>
-				</ul>
-			
-			</section>
-		</div>
+					<!-- Skills Section -->
+					<div>
+						<section id="skills">
+							<h2>Skills</h2>
+							<ul>
+								<li>Programming skills (OOP);</li>
+								<li>Data structures & Algorithms;</li>
+								<li>Java SE;</li>
+								<li>DB knowledge (SQL, Oracle);</li>
+								<li>ORM (JPA,Hibernate) – beginner;</li>
+								<li>HTML, CSS;</li>
+								<li>Git.</li>
+							</ul>
+						
+						</section>
+					</div>
 
-		<!-- Experience Section -->
-		<section id="experience">
-			<h2>Work Experience</h2>
-			<table class="tables">
-				<thead>
-					<tr>
-						<th>Period</th>
-						<th>Place</th>
-						<th>Position/Description</th>
-					</tr>
-					
-				</thead>
-				<tbody>
-					<tr>
-						<td>2016-present</td>
-						<td>Customs Laboratory</td>
-						<td>
-							<section class="details">
-								<details>
-  								<summary>Chief Inspector</summary>
-  								<p><strong>Main Activities</strong></p>
-  								<ul>
-  									<li>
-  										Assume all the roles and responsibilities of the Laboratory Manager in his/her absence
-  									</li>
-  									<li>
-  										Review and approve test results of finished products and raw materials per the positive release procedure
-  									</li>
-  									<li>Perform routine laboratory test procedures, operate analytical instruments</li>
-  									<li>Interpret /report Quality and Laboratory data</li>
-  									<li>
-  										Ensure that QC Chemistry Laboratory methods are validated and all analysts are qualified to perform these methods
-  									</li>
-  								</ul>
-  									
-								</details>
-							</section>
-						</td>
-					</tr>
+					<!-- Experience Section -->
+					<section id="experience">
+						<h2>Work Experience</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Period</th>
+									<th>Place</th>
+									<th>Position/Description</th>
+								</tr>
+								
+							</thead>
+							<tbody>
+								<tr>
+									<td>2016-present</td>
+									<td>Customs Laboratory</td>
+									<td>
+										<section>
+											<details>
+												<summary><h3>Chief Inspector</h3></summary>
+												<p><strong>Main Activities</strong></p>
+												<ul>
+													<li>
+														Assume all the roles and responsibilities of the Laboratory Manager in his/her absence
+													</li>
+													<li>
+														Review and approve test results of finished products and raw materials per the positive release procedure
+													</li>
+													<li>Perform routine laboratory test procedures, operate analytical instruments</li>
+													<li>Interpret /report Quality and Laboratory data</li>
+													<li>
+														Ensure that QC Chemistry Laboratory methods are validated and all analysts are qualified to perform these methods
+													</li>
+												</ul>
+													
+											</details>
+										</section>
+									</td>
+								</tr>
 
-					<tr>
-						<td>2009–2016</td>
-						<td>Laboratory of Organic and Analytical Chemistry, Moldova State University</td>
-						<td>
-							<section class="details">
-								<details>
-  								<summary>Scientific Researcher</summary>
-								<p><strong>Main Activities</strong></p>
-  								<ul>
-  									<li>
-  										Working as part of a team in a research laboratory
-  									</li>
-  									<li>
-  										Setting up laboratory equipment and conducting tests and experiments
-  									</li>
-  									<li>Recording and analysing data</li>
-  									<li>Presenting results to senior research staff</li>
-  									<li>Researching and writing papers, reports and reviews</li>
-  									<li>Supervising junior staff, including laboratory technicians</li>
-  								</ul>
-  									
-								</details>
-							</section>
-						</td>
-					</tr>
+								<tr>
+									<td>2009–2016</td>
+									<td>Laboratory of Organic and Analytical Chemistry, Moldova State University</td>
+									<td>
+										<section>
+											<details>
+												<summary><h3>Scientific Researcher</h3></summary>
+											<p><strong>Main Activities</strong></p>
+												<ul>
+													<li>
+														Working as part of a team in a research laboratory
+													</li>
+													<li>
+														Setting up laboratory equipment and conducting tests and experiments
+													</li>
+													<li>Recording and analysing data</li>
+													<li>Presenting results to senior research staff</li>
+													<li>Researching and writing papers, reports and reviews</li>
+													<li>Supervising junior staff, including laboratory technicians</li>
+												</ul>
+													
+											</details>
+										</section>
+									</td>
+								</tr>
 
-					<tr>
-						<td>2007–2008</td>
-						<td>
-							Laboratory of Bioinorganic Chemistry, Institute of Chemistry of the Academy of Sciences of Moldova
-						</td>
-						<td>
-							<section class="details">
-								<details>
-  								<summary>Junior Researcher</summary>
-								<p><strong>Main Activities</strong></p>
-  								<ul>
-  									<li>
-  										Perform complex research projects, such as developing new products and testing new methods
-  									</li>
-  									<li>
-  										Provide instruction on proper chemical testing and processing procedures including mixing times, operating temperatures, and ingredients
-  									</li>
-  									<li>Prepare compounds, reagents, and solutions used in laboratory procedures</li>
-  									<li>Analyze various substances to find their composition</li>
-  									<li>Test substances and materials for chemical safety</li>
-  									<li>Write technical reports to describe methods and findings</li>
-  									<li>Present findings to engineers, scientists, and other colleagues</li>
-  								</ul>
-  									
-								</details>
-							</section>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			
-		</section>
+								<tr>
+									<td>2007–2008</td>
+									<td>
+										Laboratory of Bioinorganic Chemistry, Institute of Chemistry of the Academy of Sciences of Moldova
+									</td>
+									<td>
+										<section>
+											<details>
+												<summary><h3>Junior Researcher</h3></summary>
+											<p><strong>Main Activities</strong></p>
+												<ul>
+													<li>
+														Perform complex research projects, such as developing new products and testing new methods
+													</li>
+													<li>
+														Provide instruction on proper chemical testing and processing procedures including mixing times, operating temperatures, and ingredients
+													</li>
+													<li>Prepare compounds, reagents, and solutions used in laboratory procedures</li>
+													<li>Analyze various substances to find their composition</li>
+													<li>Test substances and materials for chemical safety</li>
+													<li>Write technical reports to describe methods and findings</li>
+													<li>Present findings to engineers, scientists, and other colleagues</li>
+												</ul>
+													
+											</details>
+										</section>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						
+					</section>
 
-		<!-- Language Proficiency -->
-		<div class="skills-langauge">
-			<section id="language">
-				<h2>Language Proficiency</h2>
-				<ul>
-					<li>Romanian <progress value="100" max="100"></progress></li>
-					<li>Russian <progress value="50" max="100"></progress></li>
-					<li>English <progress value="60" max="100"></progress></li>
-					<li>French <progress value="20" max="100"></progress></li>
-				</ul>
-			</section>
-		</div>
+					<!-- Language Proficiency -->
+					<div>
+						<section id="language">
+							<h2>Language Proficiency</h2>
+							<ul>
+								<li>Romanian <progress value="100" max="100"></progress></li>
+								<li>Russian <progress value="50" max="100"></progress></li>
+								<li>English <progress value="60" max="100"></progress></li>
+								<li>French <progress value="20" max="100"></progress></li>
+							</ul>
+						</section>
+					</div>
 
-		<!-- Publication Section -->
-		<section id="publications">
-			<h2>Publications</h2>
-			<div class="publication-list">
-			<ul>
-				<li>
-					<p>
-						D. M. Piñero Cruz, D. N. Woodruff, I.-R. Jeon, I. Bhowmick, <strong><em>M. Secu</em></strong>, E. A. Hillard, P.
-						Dechambenoit, R. Clérac, "Switching off the single-molecule magnet properties of the
-						[Co<sup>II</sup>(Me<sub>6</sub>tren)(OH<sub>2</sub>)]<sup>2+</sup> module by complexation with trans-[Ru<sup>III</sup>(salen)(CN)<sub>2</sub>]", <strong>New Journal of Chemistry</strong>, <em>Vol. 38 </em>, 2014.
-						<a href="https://pubs.rsc.org/en/content/articlelanding/2014/nj/c4nj00452c#!divAbstract" target="blanck">
-							https://doi.org/10.1039/C4NJ00452C
-						</a>
-					</p>
-				</li>
-				<li>
-					M. Revenco, <strong><em>M. Secu</em></strong>, S. Ostrovsky, O. Reu, A. Palii, O. Palamarciuc, K. Pedersen,
-					R. Clerac, S. Klokishner, "Slow Relaxation of Magnetization in a Family of Linear
-					Mn<sup>III</sup>M<sup>III</sup> Mn<sup>III</sup>(M = Fe, Ru, Os) Compounds", <strong>IFMBE Proceedings Series</strong>, <em>Vol. 55</em>, 2016.
-					<a href="https://pubs.rsc.org/en/content/articlelanding/2014/nj/c4nj00452c#!divAbstract" target="blanck">
-							https://doi.org/10.1007/978-981-287-736-9_31
-					</a>
-				</li>
-			</ul>
+					<!-- Publication Section -->
+					<section id="publications">
+						<h2>Publications</h2>
+						<div>
+						<ul>
+							<li>
+								<p>
+									D. M. Piñero Cruz, D. N. Woodruff, I.-R. Jeon, I. Bhowmick, <strong><em>M. Secu</em></strong>, E. A. Hillard, P.
+									Dechambenoit, R. Clérac, "Switching off the single-molecule magnet properties of the
+									[Co<sup>II</sup>(Me<sub>6</sub>tren)(OH<sub>2</sub>)]<sup>2+</sup> module by complexation with trans-[Ru<sup>III</sup>(salen)(CN)<sub>2</sub>]", <strong>New Journal of Chemistry</strong>, <em>Vol. 38 </em>, 2014.
+									<a href="https://pubs.rsc.org/en/content/articlelanding/2014/nj/c4nj00452c#!divAbstract" target="blanck">
+										https://doi.org/10.1039/C4NJ00452C
+									</a>
+								</p>
+							</li>
+							<li>
+								M. Revenco, <strong><em>M. Secu</em></strong>, S. Ostrovsky, O. Reu, A. Palii, O. Palamarciuc, K. Pedersen,
+								R. Clerac, S. Klokishner, "Slow Relaxation of Magnetization in a Family of Linear
+								Mn<sup>III</sup>M<sup>III</sup> Mn<sup>III</sup>(M = Fe, Ru, Os) Compounds", <strong>IFMBE Proceedings Series</strong>, <em>Vol. 55</em>, 2016.
+								<a href="https://pubs.rsc.org/en/content/articlelanding/2014/nj/c4nj00452c#!divAbstract" target="blanck">
+										https://doi.org/10.1007/978-981-287-736-9_31
+								</a>
+							</li>
+						</ul>
+						</div>
+					</section>
+				</div>
 			</div>
-		</section>
-
-	</main>
-	
+	    </main>
+	</div>
 	<!-- Footer -->
 	<footer>
 		<div> 
@@ -286,5 +325,8 @@
 		</div>
 
 	</footer>
+
+	 <!-- Bootstrap Bundle with Popper -->
+	<script src="CSS/bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
