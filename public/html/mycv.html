@@ -15,10 +15,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>My CV</title>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="10" class="scrollspy-example" tabindex="0">
+<body id="body-id" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="80" class="scrollspy-example" tabindex="0">
 
 	<!-- Header -->
-
 	<header>
 		<nav id="navbar-example2" class="navbar navbar-expand-xl navbar-light bg-dark bg-gradient px-3 fixed-top">
 		  <a class="navbar-brand" href="#contact">
@@ -32,7 +31,7 @@
   			<div class="collapse navbar-collapse" id="navbarNav">
 			  <ul class="nav nav-pills navbar-nav px-5 mx-5">
 			    <li class="nav-item">
-			      <a class="nav-link active text-white " href="#about">About</a>
+			      <a class="nav-link text-white " href="#about">About</a>
 			    </li>
 			    <li class="nav-item">
 			      <a class="nav-link text-white " href="#education">Education</a>
@@ -55,15 +54,15 @@
 	</header>
 
 	<!-- Main -->
-		<main class="container mt-5 p-5 border border-primary">
+		<main class="container p-5 border border-primary">
 			<div class="row">
 
 			    <!-- Contact Section -->
-				<div class="col-lg-4">
-					<div class="card">
-						<section id="contact">
+				<div class="col-lg-3">
+						<section id="contact" class="sticky-top">
+							<div class="card">
 							 <a href="images/avatar.jpg">
-								<img class="card-img-top img-fluid" src="images/avatar.jpg" alt="Mihail" >
+								<img class="card-img-top" src="images/avatar.jpg" alt="Mihail" >
 							</a>
 							<div class="card-body">
 								<h2 class="card-title text-capitalize">secu mihail</h2>
@@ -75,17 +74,15 @@
 											<a href="tel:+373-69-18-33-55" class="text-decoration-none text-dark"><i class="fa fa-mobile mx-2" aria-hidden="true"></i>+373-69-18-33-55</a>
 										</li>
 										<li><a href="mailto:secumihai@gmail.com" class="text-decoration-none text-dark"><i class="fa fa-envelope mx-2" aria-hidden="true"></i>Email Us</a></li>
-										
 									</ul>
 								</address>
 							</div>
+						  </div>
 						</section>
 					</div>
 
-				</div>
-
 				<!-- About Section -->
-				<div class="col-lg-8">
+				<div class="col-lg-9">
 					<section id="about">
 						<div class="card">
 					 		<div class="card-header">
@@ -106,7 +103,7 @@
 					    		<h2>Education</h2>
 					  		</div>
 					  		<div class="card-body">	
-								<table class="table table-dark table-hover">
+								<table class="table table-dark table-striped table-hover">
 									<thead>
 										<tr>
 											<th>Period</th>
@@ -192,7 +189,7 @@
 					    		<h2>Work Experience</h2>
 					  		</div>
 					  		<div class="card-body">
-								<table class="table table-dark table-hover">
+								<table class="table table-dark table-striped table-hover">
 									<thead>
 										<tr>
 											<th>Period</th>
@@ -210,16 +207,20 @@
 													<details open>
 														<summary><h3 class="h6 d-inline">Chief Inspector</h3></summary>
 														<p><strong>Main Activities</strong></p>
-														<ul>
-															<li>
+														<ul class="list-group">
+															<li class="list-group-item list-group-item-dark">
 																Assume all the roles and responsibilities of the Laboratory Manager in his/her absence
 															</li>
-															<li>
+															<li class="list-group-item list-group-item-dark">
 																Review and approve test results of finished products and raw materials per the positive release procedure
 															</li>
-															<li>Perform routine laboratory test procedures, operate analytical instruments</li>
-															<li>Interpret /report Quality and Laboratory data</li>
-															<li>
+															<li class="list-group-item list-group-item-dark">
+																Perform routine laboratory test procedures, operate analytical instruments
+															</li>
+															<li class="list-group-item list-group-item-dark">
+																Interpret /report Quality and Laboratory data
+															</li>
+															<li class="list-group-item list-group-item-dark">
 																Ensure that QC Chemistry Laboratory methods are validated and all analysts are qualified to perform these methods
 															</li>
 														</ul>
@@ -234,27 +235,33 @@
 											<td>Laboratory of Organic and Analytical Chemistry, Moldova State University</td>
 											<td>
 												<section>
-													<details open>
+													<details>
 														<summary><h3 class="h6 d-inline">Scientific Researcher</h3></summary>
 													<p><strong>Main Activities</strong></p>
-														<ul>
-															<li>
+														<ul class="list-group">
+															<li class="list-group-item list-group-item-dark">
 																Working as part of a team in a research laboratory
 															</li>
-															<li>
+															<li class="list-group-item list-group-item-dark">
 																Setting up laboratory equipment and conducting tests and experiments
 															</li>
-															<li>Recording and analysing data</li>
-															<li>Presenting results to senior research staff</li>
-															<li>Researching and writing papers, reports and reviews</li>
-															<li>Supervising junior staff, including laboratory technicians</li>
+															<li class="list-group-item list-group-item-dark">
+																Recording and analysing data
+															</li>
+															<li class="list-group-item list-group-item-dark">
+																Presenting results to senior research staff
+															</li>
+															<li class="list-group-item list-group-item-dark">
+																Researching and writing papers, reports and reviews
+															</li>
+															<li class="list-group-item list-group-item-dark">
+																Supervising junior staff, including laboratory technicians
+															</li>
 														</ul>
-															
 													</details>
 												</section>
 											</td>
 										</tr>
-
 										<tr>
 											<td>2007–2008</td>
 											<td>
@@ -262,21 +269,31 @@
 											</td>
 											<td>
 												<section>
-													<details open>
+													<details>
 														<summary><h3 class="h6 d-inline">Junior Researcher</h3></summary>
 													<p><strong>Main Activities</strong></p>
-														<ul>
-															<li>
+														<ul class="list-group">
+															<li class="list-group-item list-group-item-dark">
 																Perform complex research projects, such as developing new products and testing new methods
 															</li>
-															<li>
+															<li class="list-group-item list-group-item-dark">
 																Provide instruction on proper chemical testing and processing procedures including mixing times, operating temperatures, and ingredients
 															</li>
-															<li>Prepare compounds, reagents, and solutions used in laboratory procedures</li>
-															<li>Analyze various substances to find their composition</li>
-															<li>Test substances and materials for chemical safety</li>
-															<li>Write technical reports to describe methods and findings</li>
-															<li>Present findings to engineers, scientists, and other colleagues</li>
+															<li class="list-group-item list-group-item-dark">
+																Prepare compounds, reagents, and solutions used in laboratory procedures
+															</li>
+															<li class="list-group-item list-group-item-dark">
+																Analyze various substances to find their composition
+															</li>
+															<li class="list-group-item list-group-item-dark">
+																Test substances and materials for chemical safety
+															</li>
+															<li class="list-group-item list-group-item-dark">
+																Write technical reports to describe methods and findings
+															</li>
+															<li class="list-group-item list-group-item-dark">
+																Present findings to engineers, scientists, and other colleagues
+															</li>
 														</ul>
 															
 													</details>
@@ -290,57 +307,90 @@
 					</section>
 
 					<!-- Language Proficiency -->
-					<div>
-						<section id="language">
-							<h2>Language Proficiency</h2>
-							<ul>
-								<li>Romanian <progress value="100" max="100"></progress></li>
-								<li>Russian <progress value="50" max="100"></progress></li>
-								<li>English <progress value="60" max="100"></progress></li>
-								<li>French <progress value="20" max="100"></progress></li>
-							</ul>
+						<section id="language" class="mt-3">
+							<div class="card">
+						 		<div class="card-header">
+						    		<h2>Language Proficiency</h2>
+						  		</div>
+						  		<div class="card-body">				  			
+									<ul>
+										<li>
+											Romanian 
+											<div class="progress">
+											  <div class="progress-bar w-100 progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+											</div>
+										</li>
+										<li>
+											Russian
+											<div class="progress">
+											  <div class="progress-bar w-50 progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+											</div>
+										</li>
+
+										<li>
+											English
+											<div class="progress">
+											  <div class="progress-bar w-75 progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+											</div>
+										</li>
+										<li>
+											French
+											<div class="progress">
+											  <div class="progress-bar w-25 progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+											</div>
+										</li>
+									</ul>
+
+						  		</div>
+							</div>							
 						</section>
-					</div>
 
 					<!-- Publication Section -->
-					<section id="publications">
-						<h2>Publications</h2>
-						<div>
-						<ul>
-							<li>
-								<p>
-									D. M. Piñero Cruz, D. N. Woodruff, I.-R. Jeon, I. Bhowmick, <strong><em>M. Secu</em></strong>, E. A. Hillard, P.
-									Dechambenoit, R. Clérac, "Switching off the single-molecule magnet properties of the
-									[Co<sup>II</sup>(Me<sub>6</sub>tren)(OH<sub>2</sub>)]<sup>2+</sup> module by complexation with trans-[Ru<sup>III</sup>(salen)(CN)<sub>2</sub>]", <strong>New Journal of Chemistry</strong>, <em>Vol. 38 </em>, 2014.
-									<a href="https://pubs.rsc.org/en/content/articlelanding/2014/nj/c4nj00452c#!divAbstract" target="blanck">
-										https://doi.org/10.1039/C4NJ00452C
-									</a>
-								</p>
-							</li>
-							<li>
-								M. Revenco, <strong><em>M. Secu</em></strong>, S. Ostrovsky, O. Reu, A. Palii, O. Palamarciuc, K. Pedersen,
-								R. Clerac, S. Klokishner, "Slow Relaxation of Magnetization in a Family of Linear
-								Mn<sup>III</sup>M<sup>III</sup> Mn<sup>III</sup>(M = Fe, Ru, Os) Compounds", <strong>IFMBE Proceedings Series</strong>, <em>Vol. 55</em>, 2016.
-								<a href="https://pubs.rsc.org/en/content/articlelanding/2014/nj/c4nj00452c#!divAbstract" target="blanck">
+					<section id="publications" class="mt-3">
+						<div class="card">
+					 		<div class="card-header">
+					    		<h2>Publications</h2>
+					  		</div>
+					  		<div class="card-body">
+								<ul class="list-group">
+									<li class="list-group-item list-group-item-action list-group-item-dark">
+										<p>
+											D. M. Piñero Cruz, D. N. Woodruff, I.-R. Jeon, I. Bhowmick, <strong><em>M. Secu</em></strong>, E. A. Hillard, P.
+											Dechambenoit, R. Clérac, "Switching off the single-molecule magnet properties of the
+											[Co<sup>II</sup>(Me<sub>6</sub>tren)(OH<sub>2</sub>)]<sup>2+</sup> module by complexation with trans-[Ru<sup>III</sup>(salen)(CN)<sub>2</sub>]", <strong>New Journal of Chemistry</strong>, <em>Vol. 38 </em>, 2014.
+											<a href="https://pubs.rsc.org/en/content/articlelanding/2014/nj/c4nj00452c#!divAbstract" target="blanck">
+												https://doi.org/10.1039/C4NJ00452C
+											</a>
+										</p>
+									</li>
+									<li class="list-group-item list-group-item-action list-group-item-dark">
+										M. Revenco, <strong><em>M. Secu</em></strong>, S. Ostrovsky, O. Reu, A. Palii, O. Palamarciuc, K. Pedersen,
+										R. Clerac, S. Klokishner, "Slow Relaxation of Magnetization in a Family of Linear
+										Mn<sup>III</sup>M<sup>III</sup> Mn<sup>III</sup>(M = Fe, Ru, Os) Compounds", <strong>IFMBE Proceedings Series</strong>, <em>Vol. 55</em>, 2016.
+										<a href="https://pubs.rsc.org/en/content/articlelanding/2014/nj/c4nj00452c#!divAbstract" target="blanck">
 										https://doi.org/10.1007/978-981-287-736-9_31
-								</a>
-							</li>
-						</ul>
+										</a>
+									</li>
+								</ul>
+					  		</div>
 						</div>
+						
 					</section>
 				</div>
 			</div>
 	    </main>
 	
 	<!-- Footer -->
-	<footer>
-		<div> 
+	<footer class="footer mt-auto py-3 bg-light text-muted text-center">
 			Copyright &copy; 2021 Secu Mihail. All Rights Reserved.
-		</div>
-
 	</footer>
+
+	<!--jquery 1st, this version but your may be ok : jquery-1.11.2.min.js-->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
 
 	 <!-- Bootstrap Bundle with Popper -->
 	<script src="CSS/bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 </html>
